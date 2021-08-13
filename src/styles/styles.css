@@ -1,0 +1,356 @@
+:root {
+  /*light*/
+  --color-bg: white;
+  --color-text-main: black;
+  --color-primary: #ffdb35;
+
+  /*uncomment for dark*/
+  /*
+      --color-bg: #242526;
+      --color-text-main: white;
+      --color-primary: #ff004d;*/
+
+  --low-opacity-bg: rgba(255, 255, 255, 0.8);
+  --wrapper-height: 85vh;
+  --image-max-width: 200px;
+  --font-family: "Varela";
+  --font-family-header: "Nanum Pen";
+  --background-image-1: url("../assets/images/rowing-bg.jpg");
+  --background-image-2: url("https://cdn.glitch.com/5fe60a68-2fd8-4c91-b74a-b259c25c948a%2FIMG_3769_Original%202.jpg?v=1628049932243");
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+/* Import fonts */
+@font-face {
+  font-family: Nanum Pen;
+  src: url("https://cdn.glitch.com/5fe60a68-2fd8-4c91-b74a-b259c25c948a%2FNanumPenScript-Regular.ttf?v=1627959675639")
+    format("opentype");
+}
+
+/* Import fonts */
+@font-face {
+  font-family: Varela;
+  src: url("https://cdn.glitch.com/5fe60a68-2fd8-4c91-b74a-b259c25c948a%2FVarelaRound-Regular.ttf?v=1627955840904")
+    format("opentype");
+}
+@font-face {
+  font-family: Varela;
+  font-weight: bold;
+  src: url("https://cdn.glitch.com/5fe60a68-2fd8-4c91-b74a-b259c25c948a%2FVarelaRound-Regular.ttf?v=1627955840904")
+    format("opentype");
+}
+
+@font-face {
+  font-family: League;
+  src: url("https://cdn.glitch.com/5fe60a68-2fd8-4c91-b74a-b259c25c948a%2FLeagueScript-Regular.ttf?v=1628012528583")
+    format("opentype");
+}
+
+@font-face {
+  font-family: Public Sans;
+  src: url("https://cdn.glitch.com/5fe60a68-2fd8-4c91-b74a-b259c25c948a%2FPublicSans-Light.ttf?v=1627956189363")
+    format("opentype");
+}
+
+@font-face {
+  font-family: Roboto Condensed;
+  src: url("https://cdn.glitch.com/5fe60a68-2fd8-4c91-b74a-b259c25c948a%2FRobotoCondensed-Regular.ttf?v=1627956605973")
+    format("opentype");
+}
+
+/* Our remix on glitch button */
+.btn--remix {
+  font-family: var(--font-family);
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  font-weight: 500;
+  height: 2.75rem;
+  align-items: center;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+  margin-left: auto;
+}
+.btn--remix img {
+  margin-right: 0.5rem;
+}
+.btn--remix:hover {
+  background-color: #d0fff1;
+}
+
+/* Navigation grid */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  align: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  position: fixed;
+  background-color: var(--low-opacity-bg);
+}
+
+.header a:not(.btn--remix):link,
+a:not(.btn--remix):visited {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: #000;
+  color: var(--color-text-main);
+  text-decoration: none;
+  border-style: none;
+}
+.header a:hover {
+  background: var(--color-primary);
+  border-radius: 20px;
+}
+
+.header .links {
+  padding: 0.5rem 0rem 0.5rem;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.divider {
+  padding: 0 1rem;
+  color: var(--color-text-main);
+}
+/******************************************************************************
+    END Glitch hello-app default styles
+    ******************************************************************************/
+
+/* Page structure */
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  margin: 0;
+}
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 0rem;
+  min-height: 100vh;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*max-width: 900px;*/
+}
+
+/* Page titles */
+h1 {
+  color: #2dc3e0;
+  color: var(--color-text-main);
+  -webkit-text-stroke-width: 0.5pt;
+  -webkit-text-stroke-color: transparent;
+  font-family: var(--font-family-header);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 150px !important;
+  line-height: 80px !important;
+}
+
+.uncentered h1 {
+  font-size: 30px !important;
+  color: #27b45e;
+  color: var(--color-text-main);
+  font-family: var(--font-family);
+  -webkit-text-stroke-width: 1pt;
+  -webkit-text-stroke-color: var(--color-text-main);
+}
+
+.page .uncentered {
+  margin-top: 1.5rem;
+}
+
+.uncentered p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.page p {
+  line-height: 1.5;
+  color: var(--color-text-main);
+}
+
+.page a {
+  color: var(--color-text-main);
+}
+
+.page a:hover {
+  text-decoration: none;
+}
+
+/* The React image and "click me" text */
+.btn--click-me {
+  user-select: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn--click-me:hover {
+  text-decoration: underline;
+}
+
+/* Very light scaling for our illustration */
+.illustration {
+  max-width: 100%;
+  max-height: var(--image-max-width);
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+/* About Me */
+.aboutme {
+  /*max-width: 700pt;
+    #margin: 0rem auto 0;*/
+  padding-bottom: 20px;
+}
+
+.page .aboutme {
+  background-image: var(--background-image-2);
+  background-position: center center;
+  background-size: cover;
+  width: 100vw;
+}
+
+.page .home {
+  background-image: var(--background-image-1);
+  background-position: center center;
+  background-size: cover;
+  width: 100vw;
+}
+
+.aboutme p {
+  font-size: 1rem;
+}
+h2 {
+  font-size: 30px;
+  color: var(--color-text-main);
+  font-family: var(--font-family);
+  margin-block-start: 0rem;
+  margin-block-end: 1.5rem;
+}
+
+h4 {
+  color: #ff6e40;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #1e3d59;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 0%;
+}
+
+h3 {
+  color: #f7941d;
+  color: var(--color-text-main);
+  font-family: var(--font-family);
+  -webkit-text-stroke-width: 1pt;
+  -webkit-text-stroke-color: var(--color-text-main);
+  font-size: 20px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+iframe {
+  float: center;
+  padding-top: 20pt;
+}
+
+.c1 {
+  max-width: 610pt;
+  min-width: 200pt;
+}
+
+mark {
+  background-color: var(--color-primary) !important;
+  color: var(--color-text-main);
+  border-radius: 10px;
+}
+
+.spaced {
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.full {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-back {
+  background-color: black;
+}
+
+.to-content {
+  height: 2000px;
+}
+
+box {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  border-spacing: 15px 15px;
+  border-color: transparent;
+  background-color: var(--low-opacity-bg);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.in-box {
+  margin: 5px 5px 5px 5px;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+.narrow {
+  max-width: 900px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+space {
+  padding: 10px;
+}
