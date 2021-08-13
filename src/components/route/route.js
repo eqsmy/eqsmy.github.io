@@ -12,7 +12,7 @@ import About from "../../pages/about";
 
 export default () => (
   <Switch>
-    <Route path="/about" component={About} />
-    <Route path="/" component={Home} />
+    <Route path="/about" component={Home} />
+    <Route path="/" component={About} />
   </Switch>
 );
