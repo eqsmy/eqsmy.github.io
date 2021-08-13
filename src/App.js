@@ -13,7 +13,7 @@ function App() {
         <div className="links">
           <a href="/#">&nbsp;Home&nbsp;</a>
           <span className="divider">|</span>
-          <a href="/about">&nbsp;Resume&nbsp;</a>
+          <a href="#resume">&nbsp;Resume&nbsp;</a>
           <span className="divider">|</span>
           <a target="_blank" href="http://www.linkedin.com/in/elysiasmyers">
             &nbsp;LinkedIn&nbsp;
@@ -23,7 +23,10 @@ function App() {
       <main role="main" className="wrapper">
         <div className="content">
           {/* Router specifies which component to insert here as the main content */}
-          <PageRouter />
+          <Home />
+          <section id="resume">
+            <About />
+          </section>
         </div>
       </main>
     </Router>
