@@ -121,7 +121,8 @@ function App() {
                 id="test"
                 className="c1"
                 frameBorder="0"
-                src="https://docs.google.com/document/d/e/2PACX-1vQeQ5pM6nWZiGXzMD5AMa_UkqNi0Qtq7rVV7i8OqbrYBZySqGC9MihKHoCDJGUVRsiWXpngYxCBtrQ4/pub?embedded=true"
+                //src="https://docs.google.com/document/d/e/2PACX-1vQeQ5pM6nWZiGXzMD5AMa_UkqNi0Qtq7rVV7i8OqbrYBZySqGC9MihKHoCDJGUVRsiWXpngYxCBtrQ4/pub?embedded=true"
+                src="./assets/resumes/resume_1.0.pdf/"
               ></iframe>
             </p>
           </section>
