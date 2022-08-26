@@ -44,28 +44,30 @@ function App() {
             </box>
             <box className="narrow">
               <p className="in-box">
-                I am a rising Junior at Stanford University majoring in{" "}
+                I am a rising Senior at Stanford University majoring in{" "}
                 <mark>&nbsp;Symbolic Systems&nbsp;</mark> with a concentration
-                in Human-Centered Artificial Intelligence. I want to{" "}
+                in Human-Centered Artificial Intelligence and a minor in
+                Computer Science. I want to{" "}
                 <u>
                   develop products that can make a real difference in people's
                   lives
                 </u>
-                . I strongly believe that nothing is truly impossible to
-                accomplish given the right team of people and the willingness to
-                get your hands dirty and listen to every relevant feedback loop
-                available.
+                . Symbolic Systems has provided me with a diverse set of skills
+                in computer science, philosophy, psychology, linguistics, and
+                mathematics, affording me the ability to think deeply and
+                creatively about how to build user-centered products that push
+                the bounds of perceived possibility.
               </p>
             </box>
 
             <box className="narrow">
               <p className="in-box">
                 <em>
-                  My current experience revolves predominantly around Product
-                  Management and development of internal tools, and I am very
-                  interested in stepping into more-technical roles to further
-                  hone my <mark>&nbsp;software engineering&nbsp;</mark> skills.
-                  Check out my{" "}
+                  My current experience revolves predominantly around Technical
+                  Product Management and development of internal tools, and I am
+                  very interested in stepping into more-technical roles to
+                  further hone my <mark>&nbsp;software engineering&nbsp;</mark>{" "}
+                  skills. Check out my{" "}
                   <mark>
                     &nbsp;
                     <u>
@@ -95,9 +97,8 @@ function App() {
             </box>
             <box className="narrow">
               <p className="in-box">
-                See my resume below to learn about my recent work experiences
-                and interests. Please feel free to reach out to me about
-                anything on my resume --{" "}
+                Please feel free to reach out to me about anything on my resume
+                --{" "}
                 <mark>
                   &nbsp;I love meeting and connecting with new people!&nbsp;
                 </mark>
