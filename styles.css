@@ -33,12 +33,12 @@
   float: left;
   display: block;
   text-align: center;
-  padding: 14px;
+  padding: 12px;
   text-decoration: none;
   font-family: var(--font-family);
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   color: var(--color-text-main);
-  margin: 10px;
+  margin: 5px;
 }
 
 #navbar a:hover {
